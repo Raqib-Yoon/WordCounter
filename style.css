@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'bahij titr';
+}
+textarea{
+    resize: none;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+
+.textarea_parent>h1 {
+    background-color: rgb(0, 153, 255);
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 3rem;
+}
+
+.textarea_container {
+    height: 70vh;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .5rem solid rgb(0, 153, 255);
+    background-color: rgb(215, 238, 241);
+
+}
+
+#textarea {
+    width: 90%;
+    height: 90%;
+    outline: none;
+    border: none;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    background-color: transparent;
+}
+
+#textarea::placeholder {
+    font-size: 1.5rem;
+}
+
+
+.word_content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#words_count,
+#letters_count,
+#spaces_count {
+    background-color: rgb(0, 162, 255);
+    width: 12rem;
+    height: 3rem;
+    display: grid;
+    place-items: center;
+    border-radius: .3rem;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+#letters_count {
+    background-color: rgb(255, 115, 0);
+}
+
+#spaces_count {
+    background-color: rgb(13, 153, 88);
+}
+
+#letter,
+#spaces {
+    margin-top: 4rem;
+}
+
+.circle {
+    width: 12rem;
+    height: 12rem;
+    margin-top: 1rem;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 153, 255);
+}
+
+
+
+
+@media (max-width:768px) {
+    body {
+        background-color: rgb(159, 220, 231);
+    }
+
+    .container {
+        justify-content: space-evenly;
+        flex-direction: column;
+        gap: 4rem;
+        padding: 0 4rem;
+    }
+
+    .textarea_container {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .word_content {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .counters_div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #words_count,
+    #letters_count,
+    #spaces_count {
+        width: 8rem;
+    }
+
+    #letter,
+    #spaces {
+        margin-top: 0;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+ 
+@media (max-width:340px) {
+    .word_content{
+        flex-direction: column;
+        gap: 2rem;
+    }    
+} 
